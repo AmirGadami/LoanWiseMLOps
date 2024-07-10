@@ -5,26 +5,24 @@
 │   setup.py
 │
 ├───configs
+|        __init__.py
 │       config.py
-│       __init__.py
-│
 ├───datasets
+|       __init__.py
 │       test.csv
 │       train.csv
-│       __init__.py
-│
 ├───src
 │   ├───models
+|   |   __init__.py
 │   ├───pipelines
+|   |       __init__.py
 │   │       pipeline.py
 │   │       training_pipeline.py
-│   │       __init__.py
-│   │
 │   └───processing
+|           __init__.py
 │           data_handling.py
 │           preprocessing.py
-│           __init__.py
-│
+│           
 └───test
         pytest.ini
         test_prediction.py
