@@ -9,7 +9,7 @@ DESCRIPTION = 'Loan Prediction Model'
 URL = 'https//github.com/Amirgadami'
 EMAIL = 'ah.ghadami75@gmail.com'
 AUTHOR='Amirhossein Ghadami'
-REQUIRES_PYTHON = '>=3.9.7'
+REQUIRES_PYTHON = '>=3.7.0'
 
 
 pwd = os.path.abspath(os.path.dirname(__file__))
@@ -46,7 +46,7 @@ setup(
     python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=('tests',)),
-    package_data={'prediction_model': ['VERSION']},
+    package_data={'my_package': ['VERSION']},
     install_requires=list_reqs(),
     extras_require={},
     include_package_data=True,
