@@ -1,0 +1,25 @@
+include *.txt
+include *.csv
+include *.md 
+include *.py
+recursive-include ./my_package/*
+recursive-include ./my_package/src/*
+recursive-include ./my_package/src/models/*
+recursive-include ./my_package/src/pipelines/*
+recursive-include ./my_package/src/processing/*
+
+
+include my_package/datasets/*.csv
+include my_package/src/models/*.pkl
+include my_package/src/pipelines/*.py
+include my_package/src/processing/*.py
+incude my_package/VERSION
+include ./tests/*
+
+incude my_package/VERSION
+include ./tests/*
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

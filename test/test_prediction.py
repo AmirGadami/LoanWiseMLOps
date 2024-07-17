@@ -1,8 +1,8 @@
 import pytest
 
-from configs import config
-from src.processing.data_handling import load_data
-from src.pipelines.predict import generate_predictions 
+from my_package.configs import config
+from my_package.src.processing.data_handling import load_data
+from my_package.src.pipelines.predict import generate_predictions 
 
 
 @pytest.fixture
