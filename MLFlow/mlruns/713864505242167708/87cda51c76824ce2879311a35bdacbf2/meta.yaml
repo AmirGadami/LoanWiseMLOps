@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/GITHUB/LoanWiseMLOps/MLFLOW/mlruns/713864505242167708/87cda51c76824ce2879311a35bdacbf2/artifacts
+end_time: 1721567201755
+entry_point_name: ''
+experiment_id: '713864505242167708'
+lifecycle_stage: active
+run_id: 87cda51c76824ce2879311a35bdacbf2
+run_name: bold-goat-735
+run_uuid: 87cda51c76824ce2879311a35bdacbf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721567201519
+status: 4
+tags: []
+user_id: AmirHosein

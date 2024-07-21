@@ -28,7 +28,7 @@ classification_pipeline = Pipeline(
 
 if __name__ == '__main__':
 
-    from src.processing.data_handling import load_data,save_pipeline
+    from my_package.src.processing.data_handling import load_data,save_pipeline
 
     train = load_data(config.TRAIN_FILE)
     train_x = train[config.FEATURES]
