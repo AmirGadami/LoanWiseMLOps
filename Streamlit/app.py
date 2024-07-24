@@ -2,8 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import wget
 
 model_name = 'Classification_model.joblib'
+wget.download('https://github.com/AmirGadami/LoanWiseMLOps/blob/main/Streamlit/Classification_Model.joblib')
 model = joblib.load(model_name)
 
 def prediction(Gender,Married,Dependents,
