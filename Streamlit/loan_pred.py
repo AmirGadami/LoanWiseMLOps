@@ -6,8 +6,9 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn import metrics
 import joblib
+import wget
 
-
+wget.download('https://github.com/AmirGadami/LoanWiseMLOps/blob/main/Streamlit/train.csv')
 
 # load the dataset
 dataset = pd.read_csv("train.csv")
@@ -72,18 +73,18 @@ model_forest = grid_forest.fit(X, y)
 
 joblib.dump(model_forest, 'Classification_Model.joblib')
 
-loaded_model = joblib.load('Classification_Model.joblib')
+# loaded_model = joblib.load('Classification_Model.joblib')
 
-data = [[
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                4.98745,
-                360.0,
-                1.0,
-                2.0,
-                8.698
-            ]]
-print(f"Prediction is : {loaded_model.predict(pd.DataFrame(data))}")
+# data = [[
+#                 1.0,
+#                 0.0,
+#                 0.0,
+#                 0.0,
+#                 0.0,
+#                 4.98745,
+#                 360.0,
+#                 1.0,
+#                 2.0,
+#                 8.698
+#             ]]
+# print(f"Prediction is : {loaded_model.predict(pd.DataFrame(data))}")
