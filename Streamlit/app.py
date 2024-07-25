@@ -3,10 +3,13 @@ import pandas as pd
 import numpy as np
 import joblib
 import wget
+import os
 
-model_name = 'Classification_model.joblib'
-wget.download('https://github.com/AmirGadami/LoanWiseMLOps/blob/main/Streamlit/Classification_Model.joblib')
+file_url = 'https://github.com/AmirGadami/LoanWiseMLOps/blob/main/Streamlit/Classification_Model.joblib'
+model_name = 'Classification_Model.joblib'
+wget.download(file_url)
 model = joblib.load(model_name)
+
 
 def prediction(Gender,Married,Dependents,
             Education,Self_Employed,ApplicantIncome,CoapplicantIncome,
